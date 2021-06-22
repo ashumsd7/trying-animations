@@ -1,0 +1,54 @@
+#app{
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    box-shadow: 4px 6px 2px gray;
+    background: linear-gradient(45deg,rgb(238, 207, 207),rgb(247, 229, 127));
+}
+
+#item1{
+width: 150px;
+height: 150px;
+background: rgb(35, 76, 255);
+border-radius: 50%;
+position: relative;
+  box-shadow: 4px 6px 2px rgb(0, 0, 0);
+z-index: 1;
+}
+
+#item2{
+    width: 10px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    box-shadow: 4px 6px 2px rgb(0, 0, 0);
+    top: 140px;
+    animation: myWatch 500ms ease-in 3s 50 alternate;
+    
+   
+
+}
+
+/* #item3{
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: absolute;
+    top: 340px;
+    border-radius: 50%;
+    
+
+    
+} */
+
+
+@keyframes myWatch {
+    to{
+        transform: rotateZ(0deg);
+    }
+    from{
+        transform: rotateZ(10deg);
+    }
+}
